@@ -5,13 +5,13 @@ $produtos = [
     'id' => 1,
     'titulo' => 'Carne de sol com mandioca',
     'descricao' => 'A carne de sol com mandioca é preparada na manteiga de garrafa e servida à mesa com mandioca frita ou cozida, uma combinação perfeita de sabor e simplicidade.',
-    'img' => 'pd1.jpeg',
+    'img' => 'pd1.png',
   ],
   'prato2' => [
     'id' => 2,
     'titulo' => 'Peito de frango',
     'descricao' => 'O peito de frango defumado do Rancho permite ser fatiado, desfiado, ralado afim de compor saladas, patês, salpicão, cremes, tortas e tudo mais que sua imaginação criar.',
-    'img' => 'pd2.jpeg',
+    'img' => 'pd2.png',
   ],
   'prato3' => [
     'id' => 3,
@@ -23,7 +23,7 @@ $produtos = [
     'id' => 4,
     'titulo' => 'Lombo grelhado acebolado',
     'descricao' => 'Uma combinação muito saborosa é o Lombo grelhado acebolado, acompanhado de arroz, couve refogada e feijão tropeiro. Combinação típica da gastronomia,',
-    'img' => 'pd4.jpeg',
+    'img' => 'pd4.png',
   ],
   'prato5' => [
     'id' => 5,

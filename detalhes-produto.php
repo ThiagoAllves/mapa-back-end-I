@@ -5,13 +5,13 @@ $produtos = [
     'id' => 1,
     'titulo' => 'Carne de sol com mandioca',
     'descricao' => 'A carne de sol com mandioca é preparada na manteiga de garrafa e servida à mesa com mandioca frita ou cozida, uma combinação perfeita de sabor e simplicidade.',
-    'img' => 'pd1.jpeg',
+    'img' => 'pd1.png',
   ],
   'prato2' => [
     'id' => 2,
     'titulo' => 'Peito de frango',
     'descricao' => 'O peito de frango defumado do Rancho permite ser fatiado, desfiado, ralado afim de compor saladas, patês, salpicão, cremes, tortas e tudo mais que sua imaginação criar.',
-    'img' => 'pd2.jpeg',
+    'img' => 'pd2.png',
   ],
   'prato3' => [
     'id' => 3,
@@ -23,7 +23,7 @@ $produtos = [
     'id' => 4,
     'titulo' => 'Lombo grelhado acebolado',
     'descricao' => 'Uma combinação muito saborosa é o Lombo grelhado acebolado, acompanhado de arroz, couve refogada e feijão tropeiro. Combinação típica da gastronomia,',
-    'img' => 'pd4.jpeg',
+    'img' => 'pd4.png',
   ],
   'prato5' => [
     'id' => 5,
@@ -86,12 +86,23 @@ if (isset($_GET['id'])) {
             <img src="img/<?= $produtos['prato' . $idProduto]['img']; ?>" class="d-block w-100" alt="imagem - <?= $produtos['prato' . $idProduto]['titulo']; ?>" />
             <div class="carousel-caption d-none d-md-block">
               <h5><?= $produtos['prato' . $idProduto]['titulo']; ?></h5>
-              <p>
-                <?= $produtos['prato' . $idProduto]['descricao']; ?>
-              </p>
+
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="container item-detalhes-produto">
+      <div class="item img-detalhes-produto">
+        <img src="img/<?= $produtos['prato' . $idProduto]['img']; ?>" class="d-block w-100" alt="imagem - <?= $produtos['prato' . $idProduto]['titulo']; ?>" />
+      </div>
+      <div class="item des-detalhes-produto">
+        <h2><?= $produtos['prato' . $idProduto]['titulo']; ?></h2>
+        <p>
+          <?= $produtos['prato' . $idProduto]['descricao']; ?>
+        </p>
+        <button type="button" class="btn btn-success">Peça já</button>
       </div>
     </section>
 
@@ -99,7 +110,7 @@ if (isset($_GET['id'])) {
       <h2>Outros Pratos</h2>
       <?php
       foreach ($produtos as $key => $value) : ?>
-      <?php if ($value['id'] == $idProduto) continue; ?>
+        <?php if ($value['id'] == $idProduto) continue; ?>
         <div class="card" style="width: 18rem">
           <img src="img/<?= $value['img']; ?>" class="card-img-top" alt="imagem <?= $value['titulo']; ?>" />
           <div class="card-body">
@@ -107,7 +118,7 @@ if (isset($_GET['id'])) {
             <p class="card-text">
               <?= $value['descricao']; ?>
             </p>
-            <a target="_blank" href="detalhes-produto.php?id=<?= $value['id']; ?>" class="btn btn-primary">Saiba mais</a>
+            <a href="detalhes-produto.php?id=<?= $value['id']; ?>" class="btn btn-primary">Saiba mais</a>
           </div>
         </div>
       <?php endforeach; ?>
