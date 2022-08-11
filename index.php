@@ -67,9 +67,9 @@ $produtos = [
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <input class="form-control me-2" type="search" placeholder="Busca" aria-label="Search" />
               <button class="btn btn-outline-success" type="submit">
-                Search
+                Buscar
               </button>
             </form>
           </div>
@@ -88,38 +88,38 @@ $produtos = [
           <div class="carousel-item active">
             <img src="img/slider1.jpeg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
+              <h5>Iscas de peixe com molho de tártaro</h5>
               <p>
-                Some representative placeholder content for the first slide.
+                Petiscos variados deliciosos você encontra aqui venha provar, não perca tempo
               </p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="img/slider2.jpeg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
+              <h5>Bebidas</h5>
               <p>
-                Some representative placeholder content for the second slide.
+                Sim temos de tudo suco, refrigerantes, bebidas e dinks
               </p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="img/slider3.jpeg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
+              <h5>Culinaria caseira</h5>
               <p>
-                Some representative placeholder content for the third slide.
+                Con saudade daquela comidinha caseira? aqui é tudo de boom!!
               </p>
             </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="visually-hidden">Anterior</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="visually-hidden">Próximo</span>
         </button>
       </div>
     </section>
